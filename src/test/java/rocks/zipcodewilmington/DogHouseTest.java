@@ -1,6 +1,7 @@
 package rocks.zipcodewilmington;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import rocks.zipcodewilmington.animals.Dog;
 import rocks.zipcodewilmington.animals.animal_creation.AnimalFactory;
@@ -17,6 +18,14 @@ public class DogHouseTest {
     // TODO - Create tests for `void remove(Dog dog)`
     // TODO - Create tests for `Dog getDogById(Integer id)`
     // TODO - Create tests for `Integer getNumberOfDogs()`
+
+    @Before
+
+    public void clearHouse()
+
+    {
+        DogHouse.clear();
+    }
 
     @Test
     public void testGetNumberOfDogs() {
